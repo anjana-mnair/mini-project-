@@ -19,6 +19,9 @@ int main() {
     int n;
     cout<<"enter the No. of students: ";
     cin>>n;
+    if(n<1||n>100){
+        cout<<"invalied student cout";
+    }
     for(int i=0;i<n;i++){
         cout<<"enter marks: ";
         cin>>marks[i];}
@@ -43,13 +46,30 @@ int main() {
     if(marks[i]<low)
         low =marks[i];
             }
-    cout<<"low= "<<low;
+    cout<<"low= "<<low<<endl;
+    int pass=0,failed=0;
     for(int i=0;i<n;i++){
+        
     if(marks[i] >=40)
         
-        cout<<"pass";
+        cout<<pass ++;
     else
-        cout<<"failed";
+        cout<<failed++;
     }
+
+        cout<<" student pass= "<<pass<<endl;
+    cout<<"student failed ="<<failed;
+    
+        
+    
+    
+
+    
+    
+    
+    
+
+
+    
     return 0;
 }
